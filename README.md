@@ -1,0 +1,2 @@
+# JBase
+BaseKit for project
