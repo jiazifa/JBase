@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'JBase'
-    s.version          = '0.2.0'
+    s.version          = '0.2.1'
     s.summary          = 'A short description of JBase.'
   
   
@@ -21,8 +21,11 @@ Pod::Spec.new do |s|
 
     s.source_files = 'source/**/*'
 
-    s.subspec 'Extension' do |ss|
+    s.subspec 'FoundationExtension' do |ss|
         ss.source_files = 'source/Foundation/*'
+    end
+    
+    s.subspec 'UIExtension' do |ss|
         ss.source_files = 'source/UIKit/*'
     end
     
@@ -31,5 +34,6 @@ Pod::Spec.new do |s|
     end
 
     s.frameworks = 'UIKit'
+
   end
   

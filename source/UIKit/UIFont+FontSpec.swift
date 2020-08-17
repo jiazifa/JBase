@@ -30,58 +30,52 @@ extension UIFont {
     }
 }
 
-// Objective-C compatiblity layer for the Swift only FontSpec
 
 @objc
 extension UIFont {
 
-    // MARK: - Small 11 用户辅助信息
-
-    class var smallRegularFont: UIFont {
-        return UIFont.systemFont(ofSize: 11, weight: .regular)
-    }
-    
-    class var smallBlodFont: UIFont {
-        return UIFont.systemFont(ofSize: 11, weight: .bold)
-    }
-    // MARK: - Medium 14 大部分文字，正文内容
-    
-    class var mediumRegularFont: UIFont {
-        return UIFont.systemFont(ofSize: 14, weight: .regular)
-        
-    }
-    
-    class var mediumBoldFont: UIFont {
-        return UIFont.systemFont(ofSize: 14, weight: .bold)
-        
-    }
-    
-    // MARK: - Normal 16 用户二级标题
-
-    class var normalRegularFont: UIFont {
-        return UIFont.systemFont(ofSize: 16, weight: .regular)
-    }
-    
-    class var normalBoldFont: UIFont {
-        return UIFont.systemFont(ofSize: 16, weight: .bold)
-    }
-    
-    // MARK: - Standard 18 用户一级标题， 重点文字
-    class var standardRegularFont: UIFont {
-        return UIFont.systemFont(ofSize: 18, weight: .regular)
-    }
-    
-    class var standardBoldFont: UIFont {
-        return UIFont.systemFont(ofSize: 18, weight: .bold)
+    class func ultraLightFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .ultraLight)
     }
 
-    // MARK: - Large 24
-    class var largeRegularFont: UIFont {
-        return UIFont.systemFont(ofSize: 24, weight: .regular)
+
+    class func thinFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .thin)
     }
 
-    class var largeBoldFont: UIFont {
-        return UIFont.systemFont(ofSize: 24, weight: .bold)
+
+    class func lightFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .light)
     }
-    
+
+
+    class func regularFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .regular)
+    }
+
+
+    class func mediumFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .medium)
+    }
+
+
+    class func semiboldFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .semibold)
+    }
+
+
+    class func boldFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .bold)
+    }
+
+
+    class func heavyFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .heavy)
+    }
+
+
+    class func blackFont(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .black)
+    }
+
 }
